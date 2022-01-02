@@ -1,3 +1,4 @@
+/*GENERAL - Estilos que van en todas las páginas*/
 *{
     margin: 0;
     padding: 0;
@@ -9,9 +10,25 @@ ul, li {
     list-style: none;
 }
 
+a {
+    text-decoration: none;
+    color:black;
+}
+
 body{
     background: rgb(236, 200, 200)
 }
+
+.titulo {
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 3rem;
+    margin-top: 1rem;
+    color: rgb(197, 39, 11);
+}
+
+/*Menu*/
 .nav {
     background-color: rgba(221, 90, 90, 0.747);
     z-index: 1;
@@ -34,19 +51,17 @@ body{
 .navMenu li{
     display: inline;
     margin-left: 6rem;
+    padding: 0.5rem;
 
 }
 
-.titulo {
-    text-transform: uppercase;
-    text-align: center;
-    font-family: 'Fredericka the Great', cursive;
-    font-size: 3rem;
-    margin-top: 1rem;
-    color: rgb(197, 39, 11);
+.navMenu li:hover{
+    background-color: rgba(255, 43, 43, 0.486);
+    border-radius: 10%;
 }
 
 
+/*Slides de portada principal*/
 .portada  {
     position:relative;
     display: flex;
@@ -90,6 +105,8 @@ body{
     51%{opacity:1;}
     97%{opacity:1;}
 }
+
+/*footer*/
 footer{
     background-color: rgba(221, 90, 90, 0.747);
     text-align: center;
