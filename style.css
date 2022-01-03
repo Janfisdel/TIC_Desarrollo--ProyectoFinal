@@ -106,7 +106,7 @@ body{
     97%{opacity:1;}
 }
 
-/*footer*/
+/*footer* corregir q no que den la mitad de la pagina*/
 footer{
     background-color: rgba(221, 90, 90, 0.747);
     text-align: center;
@@ -114,3 +114,17 @@ footer{
     position: fixed;
     width: 100%;
 } 
+
+/*SERIES cambiar las fotos y ver  como hacerle con un onclick que se desplieguen las descripciones*/
+.containerSeries {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    
+    margin: 5rem;
+}
+
+.imgSeries {
+    width: 15rem;
+    height: 20rem;
+}

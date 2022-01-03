@@ -8,12 +8,7 @@ let series = [
     {id:7, nombre:"Emily in Paris", categoria:"comedia", temporadas:2, descripcion:"Una joven estadounidense del Medio Oeste es contratada por una empresa de marketing en París para brindarles una perspectiva estadounidense sobre las cosas.", calificacion:6.9, actores:"Lily Collins, Philippine Leroy-Beaulieu, Lucas Bravo, Ashley Park", plataforma:"Netflix", img:"imagenes/series/emily_paris"},
     {id:8, nombre:"The bold type", categoria:"comedia", temporadas:5, descripcion:"Un vistazo a las escandalosas vidas y amores de los responsables de una revista mundial para mujeres.", calificacion:7.9, actores:"Katie Stevens, Aisha Dee, Meghann Fahy", plataforma:"Netflix", img:"imagenes/series/bold_type.jpg"},
     {id:9, nombre:"Fleabag", categoria:"comedia", temporadas:2, descripcion:"Una joven que intenta hacer frente con humor a la vida en Londres mientras acepta las tragedias cotidianas.", calificacion:8.7, actores:"Phoebe Waller-Bridge, Sian Clifford, Andrew Scott", plataforma:"Prime Video", img:"imagenes/series/fleabag.jpg"},
-    {}
-    
-
-
-
-]
+   ]
 
 // how to ger away - crimen
 // emily - comedia
