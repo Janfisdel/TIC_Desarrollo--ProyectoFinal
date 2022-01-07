@@ -1,35 +1,18 @@
-// let division= document.createElement("div");
-// division.innerHTML="<h2>HOLA</h2>"
-
-// document.getElementById("contenedor_series").appendChild(division)
-
-function mostrarCategorias(){
-    let botones = document.createElement("div")
-
-    botones.innerHTML=`<button id="todos" type="button"><b>Todos</b></button>
-                        <button id="comedia" type="button"><b>Comedias</b></button>`;
-                        //PONER MAS BOTONES DE CADA CATEGORIA
+function agregarSeries(){
+    let container = document.getElementById("containerSeries")
     
-    document.getElementById("contenedor_series").appendChild(botones)
+    for (serie of series){
 
-
-    let comedias=document.getElementById("comedia")
-    let divDePrueba = document.createElement("div")
-  
-   
-  
-    divDePrueba.innerHTML = `<div><p>DIV DE PRUEBA</p>
-                                ${series[5].nombre}
-                                </div>`
-   
-   
-   
-                           
-    comedias.onclick = ()=>{document.getElementById("contenedor_series").appendChild(divDePrueba)}
-    
-    // comedias.onclick=()=>{funcion mostrarproductos en general que decida la categoria con un if}
-    //con el onclick que aparzca el grid de cada seccion
+        let card = document.createElement("div")
+        card.className += "card"
+        card.innerHTML = ` <div class="container-img">
+                            <img class="imgSeries" src="${serie.img}"/>
+                            <div ><img class="plataformaDimensiones" src="${serie.plataforma}"/></div>
+                            </div>
+        
+        `
+        container.appendChild(card)
+    }
 }
 
-
-mostrarCategorias()
+agregarSeries()
