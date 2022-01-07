@@ -19,6 +19,10 @@ body{
     background: rgb(236, 200, 200)
 }
 
+.container-titulo{
+    margin-top: 4rem;
+}
+
 .titulo {
     text-transform: uppercase;
     text-align: center;
@@ -30,10 +34,13 @@ body{
 
 /*Menu*/
 .nav {
-    background-color: rgba(221, 90, 90, 0.747);
+    background-color: rgb(221, 90, 90);
     z-index: 1;
     display: flex;
     justify-content:space-between;
+    position:fixed;
+    width: 100%;
+    top:0;
 
 }
 
@@ -68,23 +75,27 @@ body{
 
 /*Slides de portada principal*/
 .portada  {
-    position:relative;
     display: flex;
-    width: 70%;
+    flex-wrap: nowrap;
+    width: 90%;
     margin: auto;
+    position:absolute;
     
 }
 
+.slides-izquierda {
+    width:60%;
+}
 
 .portada_slide{
-    width: 100%;
+    width: auto;
     text-align: center;
     position: absolute;
 
 }
 
 .portada_img{
-    width:30%;
+    width: 40%;
     height: 30rem;
     padding: 1rem;  
     margin-top: 2rem;
@@ -92,35 +103,77 @@ body{
 
 #slide1{
     opacity: 1;
-    animation: transicion1 10s infinite;
+    animation: transicion1 15s infinite;
 }
 #slide2{
     opacity:0;
-    animation: transicion2 10s infinite
+    animation: transicion2 15s infinite;
 }
+
+#slide3{
+    opacity: 0;
+    animation: transicion3 15s infinite;
+} 
 
 @keyframes transicion1 {
     0%{ opacity: 1;}
-    47%{opacity:1;}
-    51%{opacity:0;}
+    29%{opacity:1;}
+    32%{opacity: 0;}
+    59% {opacity:0}
+    62% {opacity:0}
     97%{opacity:0;}
 }
 
 @keyframes transicion2 {
     0%{ opacity: 0;}
-    47%{opacity:0;}
-    51%{opacity:1;}
+    29%{opacity:0;}
+    32%{opacity:1;}
+    59% {opacity:1}
+    62% {opacity:0}
+    97%{opacity:0;}
+}
+
+@keyframes transicion3{
+    0%{ opacity: 0;}
+    29%{opacity:0;}
+    32%{opacity:0;}
+    59% {opacity:0;}
+    62% {opacity:1;}
     97%{opacity:1;}
 }
 
+/*Texto en portada INDEX*/
+.aside-derecho {
+    width: 30%;
+    margin-left: 3rem;
+    margin-top: 5rem;
+}
+.subtitulo {
+    font-style: italic;
+    font-weight: 600;
+    color: rgb(202, 62, 62);
+}
+
+.parrafo {
+    text-align: justify;
+    padding-bottom: 1rem;
+}
+
 /*footer* corregir q no que den la mitad de la pagina*/
-footer{
+.footer-index{
     background-color: rgba(221, 90, 90, 0.747);
     text-align: center;
     bottom: 0; 
     position: fixed;
     width: 100%;
 } 
+
+.footer-series {
+    background-color: rgba(221, 90, 90, 0.747);
+    text-align: center;
+    bottom: 0; 
+    width: 100%;
+}
 
 /*SERIES*/
 .containerSeries {
@@ -201,3 +254,5 @@ footer{
 #bridgertonDescripcion{
     grid-area: descripcionBridgerton;
 }
+
+
