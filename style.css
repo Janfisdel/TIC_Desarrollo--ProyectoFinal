@@ -6,7 +6,7 @@
     font-size: 16px;
 }
 
-ul, li {
+.navMenu li {
     list-style: none;
 }
 
@@ -171,88 +171,60 @@ body{
 .footer-series {
     background-color: rgba(221, 90, 90, 0.747);
     text-align: center;
+    position:static;
     bottom: 0; 
     width: 100%;
 }
 
 /*SERIES*/
-.containerSeries {
-    margin: 5rem 10rem;
-    display:grid;
-    grid-template-areas: "emilyTitulo  emilyTitulo youTitulo youTitulo"
-                         "imagenEmily descripcionEmily imagenYou descripcionYou"
-                         "papelTitulo papelTitulo bridgertonTitulo bridgertonTitulo"
-                         "imagenPapel descripcionPapel imagenBridgerton descripcionBridgerton";
+#containerSeries {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1.5rem;
+    margin: 1rem 3rem;
+}
+
+@media screen and (max-width:768px){
+    #containerSeries {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
+        margin: 0 2rem;
+    }
+}
+/* .card {
+   width: 20rem;
+} */
+
+.imgSeries {
+    width:75%;
+    height: 90%;
+    margin:auto;
+    border-radius: 15%;
+    box-shadow: 0 8px 16px 0 rgb(202, 62, 62);
+    
+    
+}
+
+.imgPlataforma {
+    width: 75%;
+    height: 2rem;
+}
+
+.descripcion{
+   color: rgb(202, 62, 62);
+}
+
+.descripcion p {
+    color:black;
+}
+
+.descripcion p span {
+    font-style: italic;
+    font-weight: bold;
+
 }
 
 .tituloSerie {
-    font-size: 2rem;
-    font-weight:bolder;
+  text-align: center;
 }
-
-.imgSeries {
-    width: 20vw;
-    height: 70%;
-    border-radius: 1rem;
-}
-
-#emilyTitulo {
-    grid-area: emilyTitulo;
-    margin: auto;
-}
-#emilyImagen {
-    grid-area: imagenEmily;
-    }
-
-#emilyDescripcion {
-    grid-area: descripcionEmily;
-}
-
-
-/*COMO SACAR LAS DIMENSIONES DEL DIV DE LA IMAGEN Y LA DESCRIPCION*/
-.gridDimensiones {
-    margin: 0 1rem;
-    background-color: coral;
-    
-}
-
-.gridDimensiones p {
-    font-size: 1rem;
-    
-}
-
-#youTitulo{
-    grid-area: youTitulo;
-    margin: auto;
-}
-#youImagen {
-    grid-area: imagenYou;
-}
-#youDescripcion {
-    grid-area: descripcionYou;
-}
-
-#papelTitulo{
-    grid-area: papelTitulo;
-    margin:auto;
-}
-#papelImagen{
-    grid-area: imagenPapel;
-}
-#papelDescripcion{
-    grid-area: descripcionPapel;
-}
-
-#bridgertonTitulo{
-    grid-area: bridgertonTitulo;
-    margin:auto;
-}
-
-#bridgertonImagen{
-    grid-area: imagenBridgerton;
-}
-#bridgertonDescripcion{
-    grid-area: descripcionBridgerton;
-}
-
-
