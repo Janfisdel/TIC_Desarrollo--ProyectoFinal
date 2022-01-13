@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -25,10 +25,57 @@
     <div class="container-titulo">
         <h1 class="titulo">Dejanos tu recomendacion</h1>
     </div>
-<!-- 
-    <footer> 
-        <p> Página creada por Jana Fisdel </p>
-     </footer>  -->
 
+    <main>
+        <form class="formulario" >
+            <fieldset>
+              <legend>Calificá nuestras series</legend><br/>
+                <label for="nombre">Nombre y apellido:</label><br/>
+                <input name="nombre" type="text"  pattern="[a-zA-ZñÑáéíóú'´ÁÉÍÓÚ ]{2,50}"  required/><br/>
+                <label for="email">Correo electronico:</label><br/>
+                <input name="email" type="email" required><br/>
+                <label for="series">Qué serie deseas calificar?</label><br/>
+                <select  name="series">
+                    <option value="This is us">This is us</option>
+                    <option value="Greys Anatomy">Grey´s Anatomy</option>
+                    <option value="La casa de papel">La casa de papel</option>
+                    <option value="Mare of Easttown">Mare of Easttown</option>
+                    <option value="Love, Victor">Love, Victor</option>
+                    <option value="WandaVision">WandaVision</option>
+                    <option value="Hunters">Hunters</option>
+                    <option value="You">You</option>
+                    <option value="Emily in Paris">Emily in Paris</option>
+                    <option value="Only murders in the building">Only murders in the building</option>
+                    <option value="The handmaid's tale">The handmaid´s tale</option>
+                    <option value="Fleabag">Fleabag</option>
+                    <option value="Lupin">Lupin</option>
+                    <option value="Modern love">Modern love</option>
+                    <option value="Loki">Loki</option>
+                    <option value="Euphoria">Euphoria</option>
+                    <option value="The Umbrella academy">The Umbrella academy</option>
+                    <option value="Dark">Dark</option>
+                    <option value="The americans">The americans</option>
+                    <option value="The boys">The boys</option> -->
+                 </select> <br/>
+                 
+                 <label for="calificacion">Cómo la calificás?</label><br/>
+                 <input name="calificacion" type="text" placeholder="Calificación entre 1-10" required /><br/>
+                 <label for="comentario">Dejanos algún comentario adicional:</label><br/>
+                 <textarea name="comentario" required></textarea><br/>
+
+
+                 <button name="enviar"  type="submit">Enviar</button>
+
+            </fieldset>
+            
+        </form>
+
+    </main>
+
+    <footer class="footer-series">
+        <p>Página creada por Jana Fisdel</p>
+      </footer>
+
+      <script src="JS/main.js"></script>
 </body>
 </html>

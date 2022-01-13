@@ -177,6 +177,26 @@ body{
 }
 
 /*SERIES*/
+.flexBotones {   
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:center;
+}
+
+.botonesCategorias{
+    margin: 0 1rem;
+    padding: 0.5rem;
+    background-color: rgba(238, 117, 117, 0.747);
+    font-weight: bold;
+    border-radius: 10%;
+    border-color: rgba(238, 103, 103, 0.747);
+    box-shadow: 0 8px 16px 0 rgba(202, 62, 62, 0.699);
+}
+
+.botonesCategorias:hover{
+    background-color: black;
+    color:rgba(238, 117, 117, 0.747)
+}
 #containerSeries {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -227,4 +247,17 @@ body{
 
 .tituloSerie {
   text-align: center;
+}
+
+/* CONTACTO */
+
+.formulario{
+    width: 50%;
+    margin: auto;
+    background-color: rgba(236, 150, 150, 0.445);
+    
+}
+
+fieldset {
+    text-align: center;
 }
