@@ -10,11 +10,11 @@ function agregarSeries(cate){
         let card = document.createElement("div")
         let informacion =document.createElement("div")
         // card.className += "card"
-        card.innerHTML = ` <img class="imgSeries" src="${serie.img}"/>
-                           <div class="informacionSerie">
-                             
-        `
-        // informacion.className += "card"
+        card.innerHTML = ` <img class="imgSeries" src="${serie.img}"/>                                                      
+                         `
+
+     
+       
         informacion.innerHTML =  `  
                                    <h3 class="tituloSerie">${serie.nombre}</h3>  
                                    <ul class="descripcion">
@@ -41,7 +41,7 @@ function agregarSeries(cate){
                            <div class="informacionSerie">
                              
         `
-        // informacion.className += "card"
+       
         informacion.innerHTML =  `  
                                    <h3 class="tituloSerie">${serie.nombre}</h3>  
                                    <ul class="descripcion">
@@ -62,3 +62,4 @@ function agregarSeries(cate){
     
 
 agregarSeries('todas')
+

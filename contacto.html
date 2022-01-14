@@ -31,9 +31,15 @@
             <fieldset>
               <legend>Calificá nuestras series</legend><br/>
                 <label for="nombre">Nombre y apellido:</label><br/>
-                <input name="nombre" type="text"  pattern="[a-zA-ZñÑáéíóú'´ÁÉÍÓÚ ]{2,50}"  required/><br/>
+                <div class="requerido">
+                <input name="nombre" type="text"  pattern="[a-zA-ZñÑáéíóú'´ÁÉÍÓÚ ]{2,50}" required/><br/>
+                <div class="validacion">Campo obligatorio</div>
+                </div>
+                <div class="requerido">
                 <label for="email">Correo electronico:</label><br/>
                 <input name="email" type="email" required><br/>
+                <div class="validacion">Campo obligatorio</div>
+               </div>
                 <label for="series">Qué serie deseas calificar?</label><br/>
                 <select  name="series">
                     <option value="This is us">This is us</option>
@@ -59,12 +65,15 @@
                  </select> <br/>
                  
                  <label for="calificacion">Cómo la calificás?</label><br/>
-                 <input name="calificacion" type="text" placeholder="Calificación entre 1-10" required /><br/>
+                 <div class="requerido">
+                 <input type="number"  placeholder="1-10" step="0.1" min="0" max="10" required><br>
+                 <div class="validacion">Campo obligatorio</div>
+                </div>
                  <label for="comentario">Dejanos algún comentario adicional:</label><br/>
-                 <textarea name="comentario" required></textarea><br/>
+                 <textarea name="comentario" rows="10" cols="30"></textarea><br/>
 
 
-                 <button name="enviar"  type="submit">Enviar</button>
+                 <button name="enviar" onsubmit="alert( 'Gracias por su compra')" type="submit">Enviar</button>
 
             </fieldset>
             

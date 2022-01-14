@@ -249,6 +249,7 @@ body{
   text-align: center;
 }
 
+
 /* CONTACTO */
 
 .formulario{
@@ -260,4 +261,25 @@ body{
 
 fieldset {
     text-align: center;
+}
+
+.requerido{
+    position:relative;
+    overflow: hidden;
+}
+
+.validacion{
+    position:absolute;
+    top:50%;
+    right: 0.5rem;
+    transform: translate(0, -50%);
+    opacity: 0;
+    color:red;
+    
+}
+
+input:invalid{border-color: red;}
+input:invalid ~ .validacion{
+    opacity:1;
+    transform: translate(-7rem, -50%);
 }
