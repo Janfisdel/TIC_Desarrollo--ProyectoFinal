@@ -19,7 +19,7 @@ let series = [
     categoria: "Drama",
     temporadas: 18,
     descripcion:
-      "Serie que cuenta los amores y adversidades que atraviesan un grupo de internos de cirugia en Seattle y sus supervisores.",
+      "Serie que cuenta los amores y adversidades que atraviesan un grupo de internos de cirugía en Seattle y sus supervisores.",
     calificacion: 7.5,
     actores: "Ellen Pompeo, Patrick Dempsey, Justin Chambers, Chandra Wilson",
     plataforma:
@@ -74,7 +74,7 @@ let series = [
     categoria: "Ciencia ficción",
     temporadas: 1,
     descripcion:
-      "Tres semanas después de los eventos de Avengers: Endgame, Wanda Maximoff y Vision viven una idílica vida suburbana en la ciudad de Westview, Nueva Jersey, tratando de ocultar su verdadera naturaleza. A medida que su entorno comienza a moverse a través de diferentes décadas y se encuentran con varios tropos televisivos , la pareja sospecha que las cosas no son lo que parecen.",
+      "Tres semanas después de los eventos de Avengers: Endgame, Wanda Maximoff y Vision viven una idílica vida suburbana en la ciudad de Westview, Nueva Jersey, tratando de ocultar su verdadera naturaleza. A medida que su entorno comienza a moverse a través de diferentes décadas y se encuentran con varios tropos televisivos, la pareja sospecha que las cosas no son lo que parecen.",
     calificacion: 8.0,
     actores: "Elizabeth Olsen, Paul Bettany, Kathryn Hahn",
     plataforma:
@@ -256,7 +256,7 @@ let series = [
     nombre: "The boys",
     categoria: "Ciencia ficción",
     temporadas: 2,
-    descripcion: "Ambientada en un universo en el que los individuos superpoderosos son reconocidos como héroes, la poderosa corporación Vought International los comercializa y monetiza. Fuera de sus personajes heroicos, la mayoría son arrogantes y corruptos. La serie se centra principalmente en dos grupos: los Siete, el principal equipo de superhéroes de VI  y The Boys, los vigilantes que buscan derribar a Vought y a los superhéroes corruptos.",
+    descripcion: "Ambientada en un universo en el que los individuos superpoderosos son reconocidos como héroes, la poderosa corporación Vought International los comercializa y monetiza. Fuera de sus personajes heroicos, la mayoría son arrogantes y corruptos. La serie se centra principalmente en dos grupos: los Siete, el principal equipo de superhéroes de VI y The Boys, los vigilantes que buscan derribar a Vought y a los superhéroes corruptos.",
     calificacion:8.7,
     actores:"Karl Urban, Jack Quaid, Antony Starr, Erin Moriarty",
     plataforma: "https://res.cloudinary.com/janfis/image/upload/v1641573348/Mujeres%20TIC/plataformas/Amazon_Prime_Video_logo_f9fnde.svg",
