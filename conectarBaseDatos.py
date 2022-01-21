@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request
 from flask_mysqldb import MySQL
 from flask import jsonify
 from flask_cors import CORS, cross_origin
@@ -7,14 +7,11 @@ app = Flask(__name__)
 
 cors = CORS(app, resources={r"/*": {"origins": "*"}})
 
-app.config['MYSQL_HOST'] = 'cursophp.com.ar'
+app.config['MYSQL_HOST'] = 'localhost'
 app.config['MYSQL_USER'] = 'root'
 app.config['MYSQL_PASSWORD'] = 'fullstack'
 app.config['MYSQL_DB'] = 'FisdelJana'
 mysql = MySQL(app)
-
-			
-		
 
 @app.route('/nuevo', methods=['POST'])	
 @cross_origin()	
@@ -32,6 +29,6 @@ def nuevo():
 					
 			
 if __name__	== '__main__':
-			app.run(port=4000, debug=True)
+			app.run(host = '0.0.0.0',port=4007)
 			
 

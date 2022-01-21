@@ -16,10 +16,10 @@
 			var datos = {
 				"nombre" : 	document.getElementById("nombre").value,
 				"email" : 	document.getElementById("email").value,
-                "serie" : document.getElementById("serie").value,
+        "serie" : document.getElementById("serie").value,
 				"comentario" : document.getElementById("comentario").value				
 			};
-			fetch('http://localhost:4000/nuevo',
+			fetch('http://cursophp.com.ar:4007/nuevo',
 			{method:'post',
 			headers:{
 				'Content-Type': 'application/json'
@@ -28,7 +28,7 @@
 			}).
 			then(function(response) {
 			console.log(JSON.stringify(datos))
-            alert("Gracias por dejarnos tu  comentario")
+            
 
 				if(response.ok) {
 					console.log("OK");
@@ -37,6 +37,8 @@
 					throw "error";
 					}
 			});
+      alert("Gracias por dejarnos tu  mensaje")
+      document.getElementById('formulario').reset();
 		}
 
         
@@ -92,8 +94,8 @@
           </fieldset>
         
       </form>
-
-<!-- 
-            <script src="JS/formulario.js"></script> -->
+      <footer class="footer-index">
+        <p>Página creada por Jana Fisdel</p>
+      </footer>
 </body>
 </html>
