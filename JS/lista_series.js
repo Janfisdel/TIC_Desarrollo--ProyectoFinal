@@ -86,7 +86,7 @@ let series = [
     id: 7,
     nombre: "Hunters",
     categoria: "Drama",
-    temporada: 1,
+    temporadas: 1,
     descripcion:
       "En 1977, en la ciudad de Nueva York, un joven judío con problemas empeñado en vengarse es acogido por un grupo secreto de cazadores de nazis que luchan en una guerra clandestina contra la camarilla de altos funcionarios nazis escondidos que trabajan para crear el Cuarto Reich.",
     calificacion: 7.2,

@@ -6,7 +6,7 @@ Repositorio para el proyecto de Mujeres en carrera TIC - Desarrollo
 
 ## _Clonar repositorio_
 ```sh
-https://github.com/Janfisdel/TIC_Desarrollo--ProyectoFinal.git
+git clone https://github.com/Janfisdel/TIC_Desarrollo--ProyectoFinal.git
 ```
 Al clonar el repositorio la aplicación ya es funcional y esta conectada a la base de datos. No se necesita ningun comando adicional.
 

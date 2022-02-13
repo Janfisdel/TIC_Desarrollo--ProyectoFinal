@@ -6,10 +6,6 @@
     font-size: 16px;
 }
 
-.navMenu li {
-    list-style: none;
-}
-
 a {
     text-decoration: none;
     color:black;
@@ -56,6 +52,7 @@ body{
      margin: 1rem;
      
 }
+
 .navMenu li{
     display: inline;
     margin-left: 6rem;
